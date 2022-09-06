@@ -1,0 +1,64 @@
+// goes in typography
+h1 {font-size:2em;line-height:1;margin-bottom:0.5em; }
+h2 {font-size:1.5em;margin-bottom:0.75em;  margin-top:1.3em;}
+h3 {font-size:1.2em;line-height:1;margin-bottom:1em;}
+h4 {font-size:1em;line-height:1.25;margin-bottom:1.25em;}
+h5 {font-size:1em;font-weight:bold;margin-bottom:1.5em;}
+h6,legend {font-size:1em;font-weight:bold;}
+p { -webkit-hyphens: none; -moz-hyphens: none; hyphens: none; word-break: normal; margin:0 0 1.5em; }
+hr {margin-top:1em;margin-bottom:1em;}
+blockquote { padding-left:1.5em;margin-bottom:1.25em;border-left: 0.3rem solid #d1d1d1;font-size: 1.25rem;
+  p { margin-bottom: 0; }
+  footer { display: block; font-size: 80%; color: #6c757d;
+    cite { font-style: italic; }
+  }
+}
+
+main {
+  a {color:#7b8a8b;&:hover{text-decoration: underline;}}
+  ul, ol, dl {margin:0 1.5em 1.5em 0;padding-left:1.5em;}
+  dl {padding-left: 0;}
+  ul {list-style-type:disc;}
+  ol {list-style-type:decimal;}
+  dd {padding-left:1.5em;}
+}
+
+// end typography
+
+// media
+figure { display: inline-block;
+  figcaption { display: block; font-size: 90%; color: #6c757d; }
+}
+
+// pre, blockquote, dl, figure, table, p, ul, ol, form { margin-bottom: 2.5rem; }
+
+// forms
+label { display: inline-block; margin-bottom: 0.5em; font-size: 0.85em;}
+.input-wrap {margin-bottom: 1em;}
+input[type="email"], input[type="number"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], input[type="password"], 
+textarea, select { -webkit-appearance: none; background-color: transparent; border: 0.1rem solid #d1d1d1; border-radius: .4rem; box-shadow: none; box-sizing: inherit; height: 3rem; padding: .6rem 1.0rem .7rem; width: 100%; transition: .2s ease-in-out; transition-property: color,background-color,border;
+  &:focus { border-color: $colour-1; outline: 0; }
+}
+input[type='checkbox'], input[type='radio'] { display: inline; margin-top: -.2rem; vertical-align: middle;}
+input[type='checkbox'] + label, input[type='radio'] + label { display: inline-block; margin-left: .5rem;}
+textarea {height: auto;}
+select { background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A"); padding-right: 3.0rem; background-repeat: no-repeat; background-position: 100% 50%; }
+
+// buttons
+.button, button, input[type="submit"], input[type="reset"], input[type="button"]{
+  background-color: $colour-1; border: 0.1rem solid $colour-1; border-radius: .4rem; color: $shade-2; cursor: pointer; display: inline-block; height: 3rem; line-height: 3rem; padding: 0 3.0rem; text-align: center; text-decoration: none; text-transform: uppercase; white-space: nowrap; transition: .1s ease-in-out; transition-property: color,background-color,border-color;
+  &:hover, &:focus { text-decoration: none; background-color: #606c76; border-color: #606c76; color: $shade-2; outline: 0;}
+  &.outlined {
+    background-color: $shade-2; border: 0.1rem solid $colour-1; color: $colour-1;
+    &:hover, &:focus { background-color: $colour-1; border-color: $colour-1; color: $shade-2;}
+  }
+}
+
+// Tables
+table {
+  width: 100%; margin-bottom: 1.5rem; border-collapse: collapse; border-spacing: 0;
+  caption { font-size: 0.9em; text-align: left; color: #999;}
+  th, td { padding: 12px 15px; text-align: left; border-bottom: 0.1rem solid #E1E1E1;}
+  th:first-child, td:first-child { padding-left: 0;}
+  th:last-child, td:last-child { padding-right: 0;}
+}

@@ -1,0 +1,6 @@
+.wp-block-group {
+	.wp-block-group__inner-container {
+        // make this a container
+        @extend .container;
+	}
+}

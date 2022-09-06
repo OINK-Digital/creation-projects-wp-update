@@ -1,0 +1,24 @@
+.mobile{
+  display: none;
+}
+
+/*
+ADD YOU SCREEN SIZES BETWEEN 800PX AND FULL DESKTOP HERE
+ */
+
+
+@media all and (max-width:800px) {
+  .desktop{
+    display: none;
+  }
+  .mobile{
+    display: block;
+  }
+  .grid, .grid-middle{
+    flex-direction: column;
+    width: 100%;
+  }
+  [class^="col"]{
+    width: 100%;
+  }
+}

@@ -1,0 +1,29 @@
+/*
+Theme Name: Modlock
+Theme URI: http://wattsdesign.com.au/
+Author: Watts Design
+Author URI: http://wattsdesign.com.au/
+Description: Theme template.
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: Watts Design
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+@import "reset";
+@import "variables";
+@import "global";
+@import "gridlex/gridlex";
+@import "utils";
+// @import "slicknav";
+@import "typography";
+@import "blocks/blocks";
+@import "header";
+@import "footer";
+@import "layout";
+// @import "woocommerce";
+// @import "woocommerce-smallscreen.scss";
+@import "mobile";

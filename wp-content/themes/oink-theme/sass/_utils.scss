@@ -1,0 +1,49 @@
+.video-wrapper {
+	position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.background-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.no-margin{
+  margin: 0px !important;
+}
+
+.no-padding{
+  padding: 0px !important;
+}
+
+.text-left{
+  text-align: left;
+}
+
+.text-center{
+  text-align: center;
+}
+
+.text-right{
+  text-align: right;
+}
+
+.fullscreen{
+  height: calc(100vh - 50px);
+  .grid{
+    height: 100%;
+  }
+}
+
+// Text Utilities
+// Block Utilities

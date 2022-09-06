@@ -1,0 +1,59 @@
+/**
+ * Variables
+ */
+
+$max-width: 1200px;
+
+$gl-colCount:   12 !default;
+$gl-gridName:   grid !default;
+$gl-colName:   col !default;
+$gl-attributeName: class !default;
+$gl-gutter:    40px !default; // Total left + right
+$gl-gutter-vertical:    20px !default;
+$gl-mq-width: 'max-width' !default;
+$gl-mq-list: (
+        lg: 80em,
+        md: 64em,
+        sm: 48em,
+        xs: 36em
+) !default;
+
+$header-height: 50px;
+
+$font-1: 'Open Sans', sans-serif;
+$font-2: 'arial';
+
+$shade-1: #283747;
+$shade-2: #ffffff;
+$shade-3: #f3f3f3;
+
+$colour-1: #de354c;
+$colour-2: #3c1874;
+
+// match these to variables.php
+// https://blog.k.io/atech/reducing-style-repetition-with-sass-maps-and-rgba
+$colours: (
+    black: $shade-1,
+    white: $shade-2,
+    grey: $shade-3,
+    colour-1: $colour-1,
+    colour-2: $colour-2,
+);
+
+@each $clr, $colour in $colours {
+  .has-#{$clr}-color {
+    color: $colour;
+  }
+  
+  .has-bg-#{$clr}-background-color {
+    background-color: $colour;
+  }
+
+  .has-#{$clr}-background-color {
+    background-color: $colour;
+  }
+
+  .has-#{$clr}-fill {
+    fill: $colour;
+  }
+}

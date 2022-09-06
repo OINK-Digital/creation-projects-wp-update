@@ -1,0 +1,25 @@
+.container-fluid {
+    padding: 0 ($gl-gutter/2);
+}
+
+.container {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 ($gl-gutter/2);
+
+  @media (max-width: 80em) { // 1280px
+    max-width: 1140px;
+  }
+
+  @media (max-width: 64em) { // 1024px
+    max-width: 960px;
+  }
+
+  @media (max-width: 48em) { // 768px
+    max-width: 720px;
+  }
+
+  @media (max-width: 36em) { // 576px
+    max-width: 540px;
+  }
+}

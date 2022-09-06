@@ -1,0 +1,16 @@
+.wp-block-buttons {
+    .wp-block-button {
+        display: inline-block;
+
+        .wp-block-button__link {
+            @extend .button;
+        }
+
+        // Outline Style
+        &.is-style-outline {
+            .wp-block-button__link {
+                @extend .outlined;
+            }
+        }
+    }
+}

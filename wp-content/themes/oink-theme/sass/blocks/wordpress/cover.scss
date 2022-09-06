@@ -1,0 +1,64 @@
+.wp-block-cover {
+    @extend .background-cover;
+
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &.is-position-top-left {
+        align-items: flex-start;
+        justify-content: start;
+    }
+
+    &.is-position-top-center {
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    &.is-position-top-right {
+        align-items: flex-start;
+        justify-content: end;
+    }
+
+    &.is-position-bottom-left {
+        align-items: flex-end;
+        justify-content: start;
+    }
+
+    &.is-position-bottom-center {
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    &.is-position-bottom-right {
+        align-items: flex-end;
+        justify-content: end;
+    }
+
+    &.has-background-dim:before {
+        content: "";
+        background-color: inherit;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        opacity: .5;
+    }
+    
+    &.has-background-dim-0::before {
+        opacity: 0;
+    }
+
+    @for $i from 1 through 9 {
+        &.has-background-dim-#{$i}0::before {
+            opacity: ($i / 10);
+        }
+    }
+
+    &.has-background-dim-100::before {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,17 @@
+/*-----------------------------------*/
+/*  Header
+/*-----------------------------------*/
+
+body{
+    padding-top: $header-height;
+}
+header#header {
+    height: $header-height;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: $colour-2;
+    a{
+        color: $shade-1;
+    }
+}

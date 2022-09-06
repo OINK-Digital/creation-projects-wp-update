@@ -1,0 +1,69 @@
+body{
+  font-family: $font-1;
+  font-size: 20px;
+  color: $shade-1;
+  i{
+    font-family: $font-1;
+	  font-style: italic;
+    b, strong{
+      font-family: $font-1;
+		font-weight: bold;
+    }
+  }
+  b, strong{
+    font-family: $font-1;
+	  font-weight: bold;
+    i{
+      font-family: $font-1;
+		font-style: italic;
+    }
+  }
+}
+
+p, span, blockquote, ul, ol, li{
+}
+
+h1, h2, h3, h4, h5, h6,legend{
+  font-family: $font-2;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3,
+legend {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 240px;
+}
+
+h5 {
+  font-size: 22px;
+}
+
+h6 {
+  font-size: 20px;
+}
+
+a:link, a:active, a:visited{
+  text-decoration: none;
+  color: $shade-1;
+  transition: all 0.3s ;
+}
+a:hover{
+  color: $colour-1;
+}
+
+p{
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+

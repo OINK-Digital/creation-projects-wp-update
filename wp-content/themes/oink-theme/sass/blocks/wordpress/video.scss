@@ -1,0 +1,7 @@
+.is-type-video {
+    display: block;
+    
+    .wp-block-embed__wrapper {
+        @extend .video-wrapper;
+    }
+}
