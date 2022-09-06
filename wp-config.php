@@ -80,6 +80,7 @@ $table_prefix = 'cp_';
  * @link https://wordpress.org/support/article/debugging-in-wordpress/
  */
 define( 'WP_DEBUG', false );
+ini_set('display_errors', 'none');
 
 /* Add any custom values between this line and the "stop editing" line. */
 
