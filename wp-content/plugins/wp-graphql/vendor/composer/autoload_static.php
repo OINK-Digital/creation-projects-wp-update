@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8
+class ComposerStaticInit392ebfe6243f4a88d9b820e8eecdfb51
 {
     public static $files = array (
         'a3ed03db03d57650e139da3e8903943c' => __DIR__ . '/../..' . '/access-functions.php',
@@ -344,6 +344,7 @@ class ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8
         'WPGraphQL\\Server\\ValidationRules\\RequireAuthentication' => __DIR__ . '/../..' . '/src/Server/ValidationRules/RequireAuthentication.php',
         'WPGraphQL\\Server\\WPHelper' => __DIR__ . '/../..' . '/src/Server/WPHelper.php',
         'WPGraphQL\\Type\\Enum\\AvatarRatingEnum' => __DIR__ . '/../..' . '/src/Type/Enum/AvatarRatingEnum.php',
+        'WPGraphQL\\Type\\Enum\\CommentNodeIdTypeEnum' => __DIR__ . '/../..' . '/src/Type/Enum/CommentNodeIdTypeEnum.php',
         'WPGraphQL\\Type\\Enum\\CommentsConnectionOrderbyEnum' => __DIR__ . '/../..' . '/src/Type/Enum/CommentsConnectionOrderbyEnum.php',
         'WPGraphQL\\Type\\Enum\\ContentNodeIdTypeEnum' => __DIR__ . '/../..' . '/src/Type/Enum/ContentNodeIdTypeEnum.php',
         'WPGraphQL\\Type\\Enum\\ContentTypeEnum' => __DIR__ . '/../..' . '/src/Type/Enum/ContentTypeEnum.php',
@@ -435,6 +436,7 @@ class ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8
         'WPGraphQL\\Utils\\DebugLog' => __DIR__ . '/../..' . '/src/Utils/DebugLog.php',
         'WPGraphQL\\Utils\\InstrumentSchema' => __DIR__ . '/../..' . '/src/Utils/InstrumentSchema.php',
         'WPGraphQL\\Utils\\Preview' => __DIR__ . '/../..' . '/src/Utils/Preview.php',
+        'WPGraphQL\\Utils\\QueryAnalyzer' => __DIR__ . '/../..' . '/src/Utils/QueryAnalyzer.php',
         'WPGraphQL\\Utils\\QueryLog' => __DIR__ . '/../..' . '/src/Utils/QueryLog.php',
         'WPGraphQL\\Utils\\Tracing' => __DIR__ . '/../..' . '/src/Utils/Tracing.php',
         'WPGraphQL\\Utils\\Utils' => __DIR__ . '/../..' . '/src/Utils/Utils.php',
@@ -444,9 +446,9 @@ class ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit0fa7074462ebea48daf02c2ac414f4d8::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit392ebfe6243f4a88d9b820e8eecdfb51::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit392ebfe6243f4a88d9b820e8eecdfb51::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit392ebfe6243f4a88d9b820e8eecdfb51::$classMap;
 
         }, null, ClassLoader::class);
     }
