@@ -13,22 +13,47 @@ function oink_theme_setup() {
     // Stop users from changing font sizes
     add_theme_support('disable-custom-font-sizes');
 
-    // Custom Editor Colours
+// Adds support for editor color palette.
     add_theme_support( 'editor-color-palette', array(
         array(
-            'name' => __( 'Black', 'oink' ),
-            'slug' => 'black',
-            'color' => '#000000',
+            'name'  => __( 'Navy' ),
+            'slug'  => 'navy',
+            'color'	=> '#262838',
         ),
         array(
-            'name' => __( 'White', 'oink' ),
-            'slug' => 'white',
-            'color' => '#ffffff',
+            'name'  => __( 'Slate' ),
+            'slug'  => 'slate',
+            'color' => '#7F8C9B',
         ),
         array(
-            'name' => __( 'Grey', 'oink' ),
-            'slug' => 'grey',
-            'color' => '#f2f2f2',
+            'name'  => __( 'Terracotta' ),
+            'slug'  => 'terracotta',
+            'color' => '#AF4D2D',
+        ),
+        array(
+            'name'  => __( 'Black' ),
+            'slug'  => 'black',
+            'color'	=> '#000',
+        ),
+        array(
+            'name'  => __( 'White' ),
+            'slug'  => 'white',
+            'color' => '#fff',
+        ),
+        array(
+            'name'  => __( 'Natural' ),
+            'slug'  => 'natural',
+            'color' => '#F6F7F7',
+        ),
+        array(
+            'name'  => __( 'sand' ),
+            'slug'  => 'sand',
+            'color'	=> '#f5f5f5',
+        ),
+        array(
+            'name'  => __( 'cement' ),
+            'slug'  => 'cement',
+            'color' => '#A7A49E',
         ),
     ) );
 

@@ -24,6 +24,7 @@ function klf_acf_input_admin_footer() { ?>
 add_action('acf/input/admin_footer', 'klf_acf_input_admin_footer');
 
 
+
 //setup options page
 if (function_exists('acf_add_options_page')) {
 
